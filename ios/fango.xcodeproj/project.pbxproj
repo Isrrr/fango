@@ -9,12 +9,22 @@
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* fangoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* fangoTests.m */; };
 		0C80B921A6F3F58F76C31292 /* libPods-fango.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DCACB8F33CDC322A6C60F78 /* libPods-fango.a */; };
+		0E3B768F2C0A3CBA00D50B01 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9ECCC82C09A8F300F20AC0 /* WidgetKit.framework */; };
+		0E3B76902C0A3CBA00D50B01 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E9ECCCA2C09A8F300F20AC0 /* SwiftUI.framework */; };
+		0E3B76932C0A3CBA00D50B01 /* LiveActivBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B76922C0A3CBA00D50B01 /* LiveActivBundle.swift */; };
+		0E3B76952C0A3CBA00D50B01 /* LiveActivLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B76942C0A3CBA00D50B01 /* LiveActivLiveActivity.swift */; };
+		0E3B76972C0A3CBA00D50B01 /* LiveActiv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B76962C0A3CBA00D50B01 /* LiveActiv.swift */; };
+		0E3B76992C0A3CBB00D50B01 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E3B76982C0A3CBB00D50B01 /* Assets.xcassets */; };
+		0E3B769D2C0A3CBB00D50B01 /* LiveActivExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 0E3B768E2C0A3CBA00D50B01 /* LiveActivExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0E3B76A12C0A3CC500D50B01 /* LiveActivLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3B76942C0A3CBA00D50B01 /* LiveActivLiveActivity.swift */; };
+		0E9ECCBC2C09A24600F20AC0 /* LiveActivityModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E9ECCBB2C09A24600F20AC0 /* LiveActivityModule.swift */; };
+		0EF6A30F2C09B34F00F3B1D7 /* LiveActivityBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EF6A30E2C09B34F00F3B1D7 /* LiveActivityBridge.m */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		7699B88040F8A987B510C191 /* libPods-fango-fangoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-fango-fangoTests.a */; };
-		816893205626C26DEFC7321F /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = DE830291EAB782FB104C0F7D /* PrivacyInfo.xcprivacy */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		9C0D4444BC3B8D00C7781BC5 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3C9DC10B76F765193967D573 /* PrivacyInfo.xcprivacy */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,12 +35,45 @@
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
 			remoteInfo = fango;
 		};
+		0E3B769B2C0A3CBB00D50B01 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0E3B768D2C0A3CBA00D50B01;
+			remoteInfo = LiveActivExtension;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0E9ECCDC2C09A8F500F20AC0 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0E3B769D2C0A3CBB00D50B01 /* LiveActivExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		00E356EE1AD99517003FC87E /* fangoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fangoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* fangoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fangoTests.m; sourceTree = "<group>"; };
+		0E3B768E2C0A3CBA00D50B01 /* LiveActivExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LiveActivExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E3B76922C0A3CBA00D50B01 /* LiveActivBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivBundle.swift; sourceTree = "<group>"; };
+		0E3B76942C0A3CBA00D50B01 /* LiveActivLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivLiveActivity.swift; sourceTree = "<group>"; };
+		0E3B76962C0A3CBA00D50B01 /* LiveActiv.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActiv.swift; sourceTree = "<group>"; };
+		0E3B76982C0A3CBB00D50B01 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0E3B769A2C0A3CBB00D50B01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E3B76A32C0A68D700D50B01 /* LiveActivityModule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LiveActivityModule.h; sourceTree = "<group>"; };
+		0E9ECCB62C099F3700F20AC0 /* fango-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fango-Bridging-Header.h"; sourceTree = "<group>"; };
+		0E9ECCBB2C09A24600F20AC0 /* LiveActivityModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityModule.swift; sourceTree = "<group>"; };
+		0E9ECCC82C09A8F300F20AC0 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		0E9ECCCA2C09A8F300F20AC0 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		0EF6A30E2C09B34F00F3B1D7 /* LiveActivityBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LiveActivityBridge.m; path = fango/LiveActivityBridge.m; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* fango.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fango.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = fango/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = fango/AppDelegate.mm; sourceTree = "<group>"; };
@@ -40,12 +83,12 @@
 		13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = PrivacyInfo.xcprivacy; path = fango/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-fango-fangoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fango-fangoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B4392A12AC88292D35C810B /* Pods-fango.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fango.debug.xcconfig"; path = "Target Support Files/Pods-fango/Pods-fango.debug.xcconfig"; sourceTree = "<group>"; };
+		3C9DC10B76F765193967D573 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xml; name = PrivacyInfo.xcprivacy; path = fango/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-fango.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fango.release.xcconfig"; path = "Target Support Files/Pods-fango/Pods-fango.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-fango-fangoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fango-fangoTests.debug.xcconfig"; path = "Target Support Files/Pods-fango-fangoTests/Pods-fango-fangoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-fango.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-fango.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = fango/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-fango-fangoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-fango-fangoTests.release.xcconfig"; path = "Target Support Files/Pods-fango-fangoTests/Pods-fango-fangoTests.release.xcconfig"; sourceTree = "<group>"; };
-		DE830291EAB782FB104C0F7D /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = fango/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -55,6 +98,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7699B88040F8A987B510C191 /* libPods-fango-fangoTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0E3B768B2C0A3CBA00D50B01 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3B76902C0A3CBA00D50B01 /* SwiftUI.framework in Frameworks */,
+				0E3B768F2C0A3CBA00D50B01 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +138,18 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		0E3B76912C0A3CBA00D50B01 /* LiveActiv */ = {
+			isa = PBXGroup;
+			children = (
+				0E3B76922C0A3CBA00D50B01 /* LiveActivBundle.swift */,
+				0E3B76942C0A3CBA00D50B01 /* LiveActivLiveActivity.swift */,
+				0E3B76962C0A3CBA00D50B01 /* LiveActiv.swift */,
+				0E3B76982C0A3CBB00D50B01 /* Assets.xcassets */,
+				0E3B769A2C0A3CBB00D50B01 /* Info.plist */,
+			);
+			path = LiveActiv;
+			sourceTree = "<group>";
+		};
 		13B07FAE1A68108700A75B9A /* fango */ = {
 			isa = PBXGroup;
 			children = (
@@ -96,7 +160,11 @@
 				81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */,
 				13B07FB71A68108700A75B9A /* main.m */,
 				13B07FB81A68108700A75B9A /* PrivacyInfo.xcprivacy */,
-				DE830291EAB782FB104C0F7D /* PrivacyInfo.xcprivacy */,
+				0E9ECCB62C099F3700F20AC0 /* fango-Bridging-Header.h */,
+				0E9ECCBB2C09A24600F20AC0 /* LiveActivityModule.swift */,
+				0E3B76A32C0A68D700D50B01 /* LiveActivityModule.h */,
+				0EF6A30E2C09B34F00F3B1D7 /* LiveActivityBridge.m */,
+				3C9DC10B76F765193967D573 /* PrivacyInfo.xcprivacy */,
 			);
 			name = fango;
 			sourceTree = "<group>";
@@ -107,6 +175,8 @@
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				5DCACB8F33CDC322A6C60F78 /* libPods-fango.a */,
 				19F6CBCC0A4E27FBF8BF4A61 /* libPods-fango-fangoTests.a */,
+				0E9ECCC82C09A8F300F20AC0 /* WidgetKit.framework */,
+				0E9ECCCA2C09A8F300F20AC0 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -124,6 +194,7 @@
 				13B07FAE1A68108700A75B9A /* fango */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* fangoTests */,
+				0E3B76912C0A3CBA00D50B01 /* LiveActiv */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
@@ -138,6 +209,7 @@
 			children = (
 				13B07F961A680F5B00A75B9A /* fango.app */,
 				00E356EE1AD99517003FC87E /* fangoTests.xctest */,
+				0E3B768E2C0A3CBA00D50B01 /* LiveActivExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,6 +249,23 @@
 			productReference = 00E356EE1AD99517003FC87E /* fangoTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		0E3B768D2C0A3CBA00D50B01 /* LiveActivExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E3B76A02C0A3CBB00D50B01 /* Build configuration list for PBXNativeTarget "LiveActivExtension" */;
+			buildPhases = (
+				0E3B768A2C0A3CBA00D50B01 /* Sources */,
+				0E3B768B2C0A3CBA00D50B01 /* Frameworks */,
+				0E3B768C2C0A3CBA00D50B01 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LiveActivExtension;
+			productName = LiveActivExtension;
+			productReference = 0E3B768E2C0A3CBA00D50B01 /* LiveActivExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		13B07F861A680F5B00A75B9A /* fango */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "fango" */;
@@ -188,10 +277,12 @@
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				00EEFC60759A1932668264C0 /* [CP] Embed Pods Frameworks */,
 				E235C05ADACE081382539298 /* [CP] Copy Pods Resources */,
+				0E9ECCDC2C09A8F500F20AC0 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				0E3B769C2C0A3CBB00D50B01 /* PBXTargetDependency */,
 			);
 			name = fango;
 			productName = fango;
@@ -204,14 +295,19 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1210;
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
+					0E3B768D2C0A3CBA00D50B01 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					13B07F861A680F5B00A75B9A = {
-						LastSwiftMigration = 1120;
+						LastSwiftMigration = 1530;
 					};
 				};
 			};
@@ -230,6 +326,7 @@
 			targets = (
 				13B07F861A680F5B00A75B9A /* fango */,
 				00E356ED1AD99517003FC87E /* fangoTests */,
+				0E3B768D2C0A3CBA00D50B01 /* LiveActivExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -242,13 +339,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0E3B768C2C0A3CBA00D50B01 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3B76992C0A3CBB00D50B01 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B07F8E1A680F5B00A75B9A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				816893205626C26DEFC7321F /* PrivacyInfo.xcprivacy in Resources */,
+				9C0D4444BC3B8D00C7781BC5 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -394,11 +499,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0E3B768A2C0A3CBA00D50B01 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0E3B76972C0A3CBA00D50B01 /* LiveActiv.swift in Sources */,
+				0E3B76952C0A3CBA00D50B01 /* LiveActivLiveActivity.swift in Sources */,
+				0E3B76932C0A3CBA00D50B01 /* LiveActivBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		13B07F871A680F5B00A75B9A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */,
+				0EF6A30F2C09B34F00F3B1D7 /* LiveActivityBridge.m in Sources */,
+				0E3B76A12C0A3CC500D50B01 /* LiveActivLiveActivity.swift in Sources */,
+				0E9ECCBC2C09A24600F20AC0 /* LiveActivityModule.swift in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -411,6 +529,11 @@
 			target = 13B07F861A680F5B00A75B9A /* fango */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
+		0E3B769C2C0A3CBB00D50B01 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0E3B768D2C0A3CBA00D50B01 /* LiveActivExtension */;
+			targetProxy = 0E3B769B2C0A3CBB00D50B01 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
@@ -418,6 +541,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5B7EB9410499542E8C5724F5 /* Pods-fango-fangoTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -445,6 +569,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 89C6BE57DB24E9ADA2F236DE /* Pods-fango-fangoTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
 				INFOPLIST_FILE = fangoTests/Info.plist;
@@ -465,10 +590,94 @@
 			};
 			name = Release;
 		};
+		0E3B769E2C0A3CBB00D50B01 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveActiv/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveActiv;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.fango.LiveActiv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0E3B769F2C0A3CBB00D50B01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LiveActiv/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LiveActiv;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = org.reactjs.native.example.fango.LiveActiv;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3B4392A12AC88292D35C810B /* Pods-fango.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -486,6 +695,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = fango;
+				SWIFT_OBJC_BRIDGING_HEADER = "fango-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -496,6 +706,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5709B34CF0A7D63546082F79 /* Pods-fango.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -512,6 +723,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = fango;
+				SWIFT_OBJC_BRIDGING_HEADER = "fango-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -568,7 +780,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD = "";
 				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -644,7 +856,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
 				LD = "";
 				LDPLUSPLUS = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -671,6 +883,7 @@
 				);
 				REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				USE_HERMES = true;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -684,6 +897,15 @@
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
 				00E356F71AD99517003FC87E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0E3B76A02C0A3CBB00D50B01 /* Build configuration list for PBXNativeTarget "LiveActivExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0E3B769E2C0A3CBB00D50B01 /* Debug */,
+				0E3B769F2C0A3CBB00D50B01 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
